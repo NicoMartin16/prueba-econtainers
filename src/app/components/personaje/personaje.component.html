@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>Personajes</h2>
+    <div class="personajes" *ngFor="let personaje of personajes">
+        <h2>{{personaje.name}}</h2>
+        <ul>
+            <li>Color de ojos: {{personaje.eye_color}}</li>
+            <li>Genero: {{personaje.gender}} </li>
+            <li>
+                <h2>Lista de films</h2>
+                <ul>
+                    <li *ngFor="let pelicula of personaje.films">{{pelicula}}</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

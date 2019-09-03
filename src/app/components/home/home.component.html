@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>Films</h2>
+    <div class="films" *ngFor="let film of films">
+        <h2 class="nombrefilms">{{film.title}}</h2>
+        <ul>
+            <li>Episodio: {{film.episode_id}}</li>
+            <li>Director: {{film.director}} </li>
+            <li>
+                <h2>Personajes</h2>
+                <ul>
+                    <li *ngFor="let personaje of film.characters">{{personaje}}</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
